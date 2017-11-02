@@ -1,25 +1,12 @@
 #include <iostream>
-
 using namespace std;
-
-class Base
+int main()
 {
-public:
-    Base() { cout << "Construct Base object\n"; }
-    ~Base() { cout << "Destruct Base object\n"; }
-};
-
-class Child: public Base
-{
-public:
-    Child() { cout << "Construct Child object\n"; }
-    ~Child() { cout << "Destruct Child object\n"; }
-};
-
-int main(int argc, char *argv[])
-{
-    cout << "* Create Object child" << endl;
-    Child child;
-
+    int a,b;
+    cout << "a= "; cin >> a;
+    cout << "b= "; cin >> b;
+    int i=a;
+    for (int i=a; i<=b; i++)
+    cout << i*i << "\t";
     return 0;
 }
