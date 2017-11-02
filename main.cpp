@@ -1,36 +1,16 @@
 #include <iostream>
 
 using namespace std;
-
-class Base
+int main()
 {
-public:
-    Base() { cout << "Construct Base object\n"; }
-    ~Base() { cout << "Destruct Base object\n"; }
-
-    void func() { cout << "Function func() of class Base\n"; }
-};
-
-class Child: public Base
-{
-public:
-    Child() { cout << "Construct Child object\n"; }
-    ~Child() { cout << "Destruct Child object\n"; }
-};
-
-int main(int argc, char *argv[])
-{
-    cout << "* Create Object base" << endl;
-    Base base;
-
-    cout << "* Create Object child" << endl;
-    Child child;
-
-    cout << "* Call method func() for object base" << endl;
-    base.func();
-
-    cout << "* Call method func() for object child" << endl;
-    child.func();
-
+    float a=0.5, d=0.25;
+    int n;
+    cout << "n= "; cin >> n;
+    cout << "a1: " << a << endl;
+    for (int i=2; i<=n; i++)
+    {
+	a=a+d;
+	cout << "a" << i << ": " << a << endl;
+    }
     return 0;
 }
