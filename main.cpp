@@ -2,6 +2,12 @@
 #include <cstring>
 
 using namespace std;
+Class abc(int a, int b, int c)
+{
+a=b;
+b=c;
+c=a;
+}
 int main()
 {
     int age;
